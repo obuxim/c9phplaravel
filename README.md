@@ -33,4 +33,6 @@ What are the post installation scripts being triggered?
 
 * This script is only useful for Cloud9 servers. Don't use it in any regular linux distribution and if you do so I take no responsibilities for breaking your Operating System from working.
 
+IMPORTANT NOTICE: Don't run the script as sudo in Cloud9
+
 # You can give a star if you like the script.
