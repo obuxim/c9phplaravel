@@ -2,11 +2,11 @@
 
     sudo apt-add-repository ppa:ondrej/php &&
     sudo apt-get update -y &&
-    sudo apt-get install -y php7.3 php7.3-common php7.3-fpm php7.3-mysql php7.3-pgsql php7.3-mbstring php7.3-xml php7.3-zip php7.3-gd &&
+    sudo apt-get install -y php7.3 php7.3-common php7.3-fpm php7.3-mysql php7.3-pgsql php7.3-mbstring php7.3-xml php7.3-zip php7.3-gd libapache2-mod-php7.3 &&
     sudo a2dismod php5 &&
     sudo a2enmod php7.3 &&
-    php -r "copy('https://getcomposer.org/installer', 'composer-setup.php');"
-    php composer-setup.php
+    php -r "copy('https://getcomposer.org/installer', 'composer-setup.php');" &&
+    php composer-setup.php &&
     php -r "unlink('composer-setup.php');"  &&
     sudo mv composer.phar /usr/local/bin/composer &&
     composer global require "laravel/installer" &&
@@ -20,3 +20,8 @@
     phpmyadmin-ctl install &&
     sudo service apache2 start &&
     sudo service mysql start
+    echo "" &&
+    echo "=============================================================================================" &&
+    echo "Thanks a lot for using the script. If you face any error(s) contact: https://fb.me/obuxim" &&
+    echo "Give a star in GitHub if the script helps!" &&
+    echo "============================================================================================="
