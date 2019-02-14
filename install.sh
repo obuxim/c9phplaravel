@@ -2,7 +2,7 @@
 
     sudo apt-add-repository ppa:ondrej/php &&
     sudo apt-get update -y &&
-    sudo apt-get install -y php7.3 php7.3-common php7.3-mysql php7.3-pgsql php7.3-mbstring php7.3-xml php7.3-zip php7.3-gd &&
+    sudo apt-get install -y php7.3 php7.3-common php7.3-fpm php7.3-mysql php7.3-pgsql php7.3-mbstring php7.3-xml php7.3-zip php7.3-gd &&
     sudo a2dismod php5 &&
     sudo a2enmod php7.3 &&
     php -r "copy('https://getcomposer.org/installer', 'composer-setup.php');"
